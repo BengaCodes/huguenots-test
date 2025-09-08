@@ -15,9 +15,15 @@ const NavLink = ({ link }: NavLinksProps) => {
       >
         {link.name}
       </a>
-      <FeatherIcon
-        icon={link.name !== 'Funds' ? 'chevron-down' : 'chevron-up'}
-      />
+      {link.name !== 'Contact' && (
+        <FeatherIcon
+          icon='chevron-down'
+          className={`${
+            link.name === 'Funds' ? 'active-icon' : 'nav__links-list-icon'
+          }`}
+          size={24}
+        />
+      )}
     </div>
   )
 }

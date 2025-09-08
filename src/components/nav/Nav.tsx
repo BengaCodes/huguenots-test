@@ -46,8 +46,10 @@ const Nav = () => {
           </ul>
         </div>
         <div className='nav__search'>
-          <button className='nav__search-btn'>UK | Professional</button>
-          <FeatherIcon icon='search' className='nav__search-icon' />
+          <button className='nav__search-btn'>
+            <FeatherIcon icon='user' className='user-icon' /> UK | Professional
+          </button>
+          <FeatherIcon icon='search' className='nav__search-icon' size={32} />
         </div>
       </article>
     </nav>
