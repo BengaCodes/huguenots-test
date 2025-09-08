@@ -47,7 +47,7 @@ const Nav = () => {
         </div>
         <div className='nav__search'>
           <button className='nav__search-btn'>
-            <FeatherIcon icon='user' className='user-icon' /> UK | Professional
+            <FeatherIcon icon='user' className='icon' /> UK | Professional
           </button>
           <FeatherIcon icon='search' className='nav__search-icon' size={32} />
         </div>

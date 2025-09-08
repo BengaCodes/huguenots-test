@@ -76,7 +76,7 @@ body {
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.2s, color 0.2s;
-      .user-icon {
+      .icon {
         width: 1.6rem;
         height: 1.6rem;
         padding: 0.2rem;
@@ -120,5 +120,100 @@ body {
     color: #fff;
     padding-top: 4rem;
     margin-left: 2rem;
+  }
+}
+
+.main-content {
+  height: 100vh;
+  background-color: rgb(240 238 235 / 1);
+  display: flex;
+}
+.filter__container {
+  padding: 2.5rem 4rem;
+  width: 100%;
+  .filter__header {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    display: flex;
+    justify-content: space-between;
+    &-btn {
+      background-color: rgb(170 76 2 / 1);
+      padding: 1.2rem;
+      height: 3.5rem;
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+  .filter__options {
+    .filter__category {
+      &-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+        font-style: italic;
+        margin-top: 1.5rem;
+      }
+
+      .filter__options-list {
+        padding: 0;
+        .filter__option-item {
+          list-style: none;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            padding-top: 0.8rem;
+
+            input[type='checkbox'] {
+              margin: 0;
+              cursor: pointer;
+              width: 1.8rem;
+              height: 1.8rem;
+            }
+
+            input[type='checkbox']:checked {
+              accent-color: #009e99;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .filter__btn {
+    margin-top: 2.5rem;
+    button {
+      background-color: #fff;
+    }
+  }
+}
+
+.divider {
+  &--horizontal {
+    width: calc(100% - 4.5rem);
+    height: 1px;
+    background-color: #000;
+    margin: 1rem 2rem;
+  }
+
+  &--vertical {
+    padding-top: 2rem;
+    width: 1px;
+    height: calc(100% - 4.5rem);
+    background-color: #000;
+    margin: 2rem 1rem;
   }
 }
