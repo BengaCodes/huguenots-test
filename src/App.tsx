@@ -4,6 +4,7 @@ import Hero from './components/hero/Hero'
 import Filter from './components/filter/Filter'
 import Divider from './components/divider/Divider'
 import Footer from './components/footer/Footer'
+import Grid from './components/grid/Grid'
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           <Filter />
         </section>
         <Divider orientation='vertical' />
+        <section id='grid' className='grid-content'>
+          <Grid />
+        </section>
       </main>
       <Footer />
     </Fragment>

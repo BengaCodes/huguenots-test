@@ -74,7 +74,7 @@ const Footer = () => {
           ))}
         </ul>
         <div className='footer__icon'>
-          <FeatherIcon size={30} icon='linkedin' className='icon' />
+          <FeatherIcon size={30} icon='linkedin' />
         </div>
       </div>
       <p className='footer__regulatory-text'>

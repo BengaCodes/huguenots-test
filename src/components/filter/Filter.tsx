@@ -17,7 +17,7 @@ const Filter = () => {
       <div className='filter__header'>
         <h2>Filter</h2>
         <button className='filter__header-btn'>
-          <FeatherIcon icon='x' /> <span>Clear all</span>
+          <FeatherIcon icon='x' /> Clear all
         </button>
       </div>
       <div className='filter__options'>
