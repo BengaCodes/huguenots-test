@@ -142,6 +142,15 @@ body {
   display: flex;
   padding-bottom: 4rem;
   padding-right: 2rem;
+
+  .filter-content {
+    width: 30%;
+  }
+
+  .grid-content {
+    width: 70%;
+    padding-left: 2rem;
+  }
 }
 .filter__container {
   padding: 2.5rem 4rem;
@@ -311,10 +320,6 @@ body {
     color: #555;
     padding: 0 2rem 2rem;
   }
-}
-
-.grid-content {
-  width: 100%;
 }
 
 .grid-header {
