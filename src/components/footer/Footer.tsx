@@ -2,42 +2,7 @@ import FeatherIcon from 'feather-icons-react'
 import Logo from '../../assets/JOH_logo.svg'
 import Divider from '../divider/Divider'
 import FooterLinksWithTitle from './FooterLinksWithTitle'
-
-const FOOTER_LINKS = {
-  about: [
-    { label: 'Our People & Leadership', url: '#' },
-    { label: 'Our commitment', url: '#' },
-    { label: 'Corporate Social Responsibility', url: '#' },
-    { label: 'Diversity, equity & inclusion', url: '#' }
-  ],
-  our_funds: [
-    { label: 'Our investment strategies', url: '#' },
-    { label: 'Our investment platforms', url: '#' }
-  ],
-  insights: [
-    { label: 'Articles', url: '#' },
-    { label: 'Blogs', url: '#' },
-    { label: 'Videos', url: '#' },
-    { label: 'Podcasts', url: '#' }
-  ],
-  resources: [
-    { label: 'Policies & statements', url: '#' },
-    { label: 'Investor resources', url: '#' },
-    { label: 'Reports & accounts', url: '#' },
-    { label: 'Glossary', url: '#' }
-  ]
-}
-
-const FOOTER_LINKS_SECONDARY = [
-  { label: 'Legal', url: '#' },
-  { label: 'Privacy Notice', url: '#' },
-  { label: 'Investor Rights', url: '#' },
-  { label: 'Company Policies', url: '#' },
-  { label: 'Modern Slavery Act', url: '#' },
-  { label: 'Keeping you safe', url: '#' },
-  { label: 'Careers', url: '#' },
-  { label: 'Contact Us', url: '#' }
-]
+import { FOOTER_LINKS, FOOTER_LINKS_SECONDARY } from '../../data'
 
 const Footer = () => {
   return (
