@@ -1,0 +1,206 @@
+.grid-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+
+    &-text {
+      padding: 1rem 1rem 1rem 3.5rem;
+      width: 50%;
+      border: 1px solid #555;
+      font-size: 1.2rem;
+      background-image: url('../../assets/search.svg');
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 2rem;
+      &::placeholder {
+        padding-left: 0;
+        font-size: 0.85em;
+      }
+    }
+
+    .group-btn {
+      border: 1px solid #555;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.8rem 1.6rem;
+      border-radius: 2rem;
+      background: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      width: 14rem;
+      color: #555;
+    }
+  }
+}
+
+.grid-card {
+  width: 100%;
+  background-color: #fff;
+  border-left: 4px solid #009e99;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 1rem;
+    padding: 0.8rem;
+    align-items: center;
+  }
+
+  &__data-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__fund-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__fund-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+  }
+
+  &__benchmark {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+
+  &__domicile,
+  &__region,
+  &__holdings,
+  &__fund-size,
+  &__launch-date {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+
+    &-btn {
+      background: none;
+      border: none;
+      color: #009e99;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #f0f9f9;
+      }
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    justify-self: center;
+    position: relative;
+    top: 1.5rem;
+    &-btn {
+      background: none;
+      border: none;
+      color: #009e99;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+
+  &--london {
+    border-left-color: #0072ce;
+  }
+}
+
+.grid-table-header {
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0.5rem;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    align-items: center;
+  }
+
+  &__data-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__fund-info {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-style: italic;
+  }
+
+  &__column {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #495057;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    gap: 0.25rem;
+  }
+
+  &__action {
+    width: 2rem;
+  }
+
+  &__sort-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #009e99;
+    transform: rotate(90deg);
+  }
+}

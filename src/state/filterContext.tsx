@@ -38,11 +38,31 @@ const FilterProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (filterOptions.size === 0) {
       setFunds(DATA)
-      return
     }
 
+    const regionFilters = new Set<string>()
+    const domicileFilters = new Set<string>()
+
+    filterOptions.forEach((option) => {
+      const isRegion = DATA.some((fund) => fund.region === option)
+      const isDomicile = DATA.some((fund) => fund.domicile === option)
+
+      if (isRegion) {
+        regionFilters.add(option)
+      }
+      if (isDomicile) {
+        domicileFilters.add(option)
+      }
+    })
+
     const filteredFunds = DATA.filter((fund) => {
-      return filterOptions.has(fund.region) || filterOptions.has(fund.domicile)
+      const regionMatch =
+        regionFilters.size === 0 || regionFilters.has(fund.region)
+
+      const domicileMatch =
+        domicileFilters.size === 0 || domicileFilters.has(fund.domicile)
+
+      return regionMatch && domicileMatch
     })
     setFunds(filteredFunds)
   }, [filterOptions])

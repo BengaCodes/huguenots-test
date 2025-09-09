@@ -26,7 +26,7 @@ const GridCards = ({
     <article
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`grid-card ${isHovered ? 'grid-card--hovered' : ''}`}
+      className={`grid-card grid-card--${domicile.toLowerCase()}`}
     >
       <div className='grid-card__content'>
         <div className='grid-card__fund-info'>
