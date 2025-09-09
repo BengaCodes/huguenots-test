@@ -1,0 +1,30 @@
+.hero {
+  background: url('../../assets/BG.png') no-repeat center center/cover;
+  height: 25vh;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 0.25rem;
+    margin-left: 2rem;
+    padding-top: 1.5rem;
+    a:first-child {
+      text-decoration: underline;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1rem;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 4rem;
+    margin-left: 2rem;
+  }
+}

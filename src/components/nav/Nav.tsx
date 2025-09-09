@@ -1,29 +1,7 @@
 import Logo from '../../assets/JOH_logo.svg'
 import NavLink from './NavLink'
 import FeatherIcon from 'feather-icons-react'
-
-const NAV_LINKS = [
-  {
-    name: 'About',
-    href: '#about'
-  },
-  {
-    name: 'Funds',
-    href: '#funds'
-  },
-  {
-    name: 'Insights',
-    href: '#insights'
-  },
-  {
-    name: 'Resources',
-    href: '#resources'
-  },
-  {
-    name: 'Contact',
-    href: '#contact'
-  }
-]
+import { NAV_LINKS } from '../../data'
 
 const Nav = () => {
   return (

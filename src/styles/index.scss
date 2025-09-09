@@ -1,0 +1,24 @@
+@use './components/_nav.scss';
+@use './components/_hero.scss';
+@use './components/_footer.scss';
+@use './components/_grid.scss';
+@use './components/_filter.scss';
+@use './vendors/_vendors.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Cambria', 'Tahoma', sans-serif;
+}

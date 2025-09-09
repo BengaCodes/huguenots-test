@@ -1,4 +1,16 @@
-export const DATA = [
+export interface FundData {
+  fundName: string
+  benchmark: string
+  fundSize: string
+  region: string
+  holdings: number
+  domicile: string
+  launchDate: string
+}
+
+export type FundsDataType = FundData[]
+
+export const DATA: FundsDataType = [
   {
     fundName: 'AB Sustainable Global Thematic Fund',
     benchmark: 'MSCI World',
@@ -142,5 +154,63 @@ export const DATA = [
     holdings: 30,
     domicile: 'Dublin',
     launchDate: '06 Jun 2015'
+  }
+]
+
+export const FILTERS = {
+  region: [
+    {
+      label: 'UK Equities',
+      value: 'UK'
+    },
+    {
+      label: 'Global Equities',
+      value: 'Global'
+    },
+    {
+      label: 'European Equities',
+      value: 'Europe'
+    },
+    {
+      label: 'Emerging Markets Equities',
+      value: 'Emerging Markets'
+    },
+    {
+      label: 'Asian Equities',
+      value: 'Asia'
+    }
+  ],
+  domicile: [
+    {
+      label: 'Dublin (IE UCITS)',
+      value: 'Dublin'
+    },
+    {
+      label: 'London (UK OEIC)',
+      value: 'London'
+    }
+  ]
+}
+
+export const NAV_LINKS = [
+  {
+    name: 'About',
+    href: '#about'
+  },
+  {
+    name: 'Funds',
+    href: '#funds'
+  },
+  {
+    name: 'Insights',
+    href: '#insights'
+  },
+  {
+    name: 'Resources',
+    href: '#resources'
+  },
+  {
+    name: 'Contact',
+    href: '#contact'
   }
 ]
